@@ -1,0 +1,48 @@
+
+@import url('http://fonts.cdnfonts.com/css/common-pixel?styles=9199');
+
+
+body {
+    background-image: url("arcade.jpg");
+    background-size: contain;
+    
+}
+
+div.menu_principal {
+    margin-top: 10vh;
+    font-family: 'Common Pixel';
+    color: white;
+    font-size: 10vh;
+    height:max-content;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+a.titre {
+    font-family: 'Common Pixel';
+    color: white;
+    font-size: 20vh;
+    vertical-align:text-bottom;
+    text-decoration: none;
+    margin-bottom: 20vh;
+}
+
+a.menu {
+    
+    font-family: 'Common Pixel';
+    color: white;
+    font-size: 10vh;
+    vertical-align:text-bottom;
+    text-decoration: none;
+}
+
+
+
+
+
+footer{
+    color: white;
+    
+    
+}
