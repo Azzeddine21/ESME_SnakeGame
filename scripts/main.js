@@ -83,15 +83,15 @@ function drawSnake() {
 
 function collisionBorder() {
 	if (snake.x < 0) {
-		snake.x = canvas.width - config.sizeCell;
+		refreshGame();
 	} else if ( snake.x >= canvas.width ) {
-		snake.x = 0;
+		refreshGame();
 	}
 
 	if (snake.y < 0) {
-		snake.y = canvas.height - config.sizeCell;
+		refreshGame();
 	} else if ( snake.y >= canvas.height ) {
-		snake.y = 0;
+		refreshGame();
 	}
 }
 function refreshGame() {
