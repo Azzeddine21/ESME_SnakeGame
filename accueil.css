@@ -3,8 +3,12 @@
 
 
 body {
-    background-image: url("arcade.jpg");
-    background-size: contain;
+    background-image: url('screen/arcade.jpg');
+    background-size:73%;
+    background-position: top right;
+    
+    
+    margin-left: 10vh;
     
 }
 
@@ -19,10 +23,10 @@ div.menu_principal {
 }
 
 
-a.titre {
+label.titre {
     font-family: 'Common Pixel';
     color: white;
-    font-size: 20vh;
+    font-size: 15vh;
     vertical-align:text-bottom;
     text-decoration: none;
     margin-bottom: 20vh;
@@ -32,7 +36,7 @@ a.menu {
     
     font-family: 'Common Pixel';
     color: white;
-    font-size: 10vh;
+    font-size: 5vh;
     vertical-align:text-bottom;
     text-decoration: none;
 }
