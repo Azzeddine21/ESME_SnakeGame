@@ -41,7 +41,6 @@ function gameLoop() {
 	drawBerry();
 	drawSnake();
 }
-requestAnimationFrame( gameLoop );
 
 function drawSnake() {
 	snake.x += snake.dx;

@@ -1,0 +1,16 @@
+#game-canvas{
+
+    height:auto;
+    width: 100%;
+}
+
+.canvas-wrapper{
+    height:auto;
+    width: 100%;
+}
+
+html, body {
+    margin: 1;
+    padding: 0;
+    background-color: black;
+  }
