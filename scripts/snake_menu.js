@@ -3,7 +3,7 @@ let border=true;
 
 const config = {
 	step: 0,
-	maxStep: 1,//Regler vitesse
+	maxStep: 3,//Regler vitesse
 	sizeCell: 5,
 	sizeBerry: 5 / 4
 }
@@ -138,7 +138,7 @@ function snakeMove(move) {
 
 function snakePath(){
 
-	//if(snake.tails[0].y==5*config.sizeCell)
+	if(snake.tails[0].y <= 20*config.sizeCell){
 		if(snake.tails[0].x==50*config.sizeCell){
 			snakeMove("down");
 			var setTimeoutLeft = setTimeout('snakeMove("left");',50);
@@ -146,11 +146,15 @@ function snakePath(){
 			snakeMove("down");
 			var setTimeoutRight = setTimeout('snakeMove("right");',50);
 		}
-
-		//if(snake.tails[0].y>20*config.sizeCell){
-			//snakeMove("up");	
-		//}
-	//}
+	}else{
+		if(snake.tails[0].x==50*config.sizeCell){
+			snakeMove("down");
+			var setTimeoutLeft = setTimeout('snakeMove("left");',50);
+		}else if(snake.tails[0].x==5*config.sizeCell){
+			snakeMove("up");
+			var setTimeoutRight = setTimeout('snakeMove("right");',50);
+		}
+	}
 }
 
 
@@ -231,6 +235,12 @@ function update_Listberries(x,y){
 			listUpdate.push(new berry(listBerries[i].x,listBerries[i].y));	
 			listBerries.splice(i,1);
 		}
+	}
+}
+
+function onClickStart(){
+	for(i=1;i<5;i++){
+		document.getElementById(`level${i}`).textContent = "level "+i;
 	}
 }
 

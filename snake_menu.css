@@ -1,3 +1,5 @@
+@import url('http://fonts.cdnfonts.com/css/common-pixel?styles=9199');
+
 #game-canvas{
 
     height:auto;
@@ -5,8 +7,14 @@
 }
 
 .canvas-wrapper{
+    display: flex;
     height:auto;
     width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+#game-canvas{
+    max-width: 1000px;
 }
 
 html, body {
@@ -14,3 +22,19 @@ html, body {
     padding: 0;
     background-color: black;
   }
+
+label{
+    font-family: 'Common Pixel';
+    color: white;
+    font-size: 5vh;
+    height:max-content;
+    text-align: center;
+    text-decoration: none;
+}
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
