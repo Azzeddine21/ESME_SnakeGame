@@ -239,7 +239,7 @@ function update_Listberries(x,y){
 }
 
 function onClickStart(){
-	for(i=1;i<5;i++){
+	for(i=1;i<4;i++){
 		document.getElementById(`level${i}`).textContent = "level "+i;
 	}
 }
