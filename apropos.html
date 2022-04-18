@@ -1,0 +1,50 @@
+<html>
+
+    <head>
+    <script type="text/javascript" src="accueil.js"></script>  
+    <link rel="stylesheet" href="apropos.css">
+    </head>
+    <body>
+        <header>
+            <button><img src="screen/arcade.jpg" onclick="onclickMenu()"></button>
+        </header>
+        <div class="menu_principal" id="menu_principal" >
+            <div class="menu_difficulte" id="menu_difficulte">
+                 <label class="titre_principale">Projet 2e annee A2MSI</label><br><br><br>
+                 
+                 <label class="titre">Description du projet </label><br>
+                 <p class="description_projet">Creation d'un site de jeux d'arcade en ligne</p>
+                 <p class="description_projet">Liste de jeux disponible : </p>
+                 <ul id="list_jeu">
+                     <li>Snake</li>
+                     <li>Space-Invader</li>
+                     <li>TBA</li>
+                     <li>TBA</li>
+                     <li>TBA</li>
+                     
+                 </ul><br>
+
+
+                 <label class="titre">Createurs : </label><br>
+                 <label class="createur">Cedric CHHUON</label><br>
+                 <label class="createur">Nicolas HOVETTE</label><br>
+                 <label class="createur">Azzeddine LAHMAR</label><br>
+
+                 
+            </div>
+        </div>
+        
+        <footer>
+            <p>Cedric CHHUON</p>
+            <p>Azzedine LAHMAR</p>
+            <p>Nicolas HOVETTE</p>
+        </footer>
+
+        <script>
+            function onclickMenu() {
+                location.replace(window.location.href = '../ESME_SnakeGame/accueil.html');
+            }
+        </script>
+    </body>
+
+</html>

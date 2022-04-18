@@ -4,17 +4,32 @@
 
     height:auto;
     width: 100%;
+    max-width: 1000px;
 }
 
+img{
+    width: 10vw;
+    height: auto;
+}
+
+button{
+    padding: 0;
+    border: none;
+    background: none;
+}
+footer{
+    padding: 10vh;
+    font-size: 1vw;
+    color: white;
+    
+    
+}
 .canvas-wrapper{
     display: flex;
     height:auto;
     width: 100%;
     justify-content: center;
     align-items: center;
-}
-#game-canvas{
-    max-width: 1000px;
 }
 
 html, body {

@@ -8,6 +8,7 @@ const imgList = [item0.src,item1.src,item2.src,item3.src,item4.src];
 function left(){
     imgList.unshift(imgList.pop());
     update()
+    console.log(imgList[2]);
 }
 
 function right(){
@@ -33,3 +34,23 @@ function initialize(){
     buttonLeft.innerText("<Previous");
     buttonRight.innerText("Next>");
 }
+
+function onclickMenu() {
+    location.replace(window.location.href = '../ESME_SnakeGame/accueil.html');
+}
+
+ function onclickJeu() {
+     var imageSplit = imgList[2].split("/")
+     var imageName = imageSplit[imageSplit.length-1];
+    switch (imageName) {
+        case  "snake_cover.png":
+            location.replace(window.location.href = '../ESME_SnakeGame/snake_menu.html');
+            break;
+        case "space-invader_cover.png" :
+            location.replace(window.location.href = '../ESME_SnakeGame/space-invader_menu.html');
+            break;  
+        default :
+            break;          
+    }   
+
+} 

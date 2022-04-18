@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Space Invader</title>
+    <audio autoplay="true" loop id="music">
+    <source src="musique/spaceinavader.mp3" id="musique" type="audio/mpeg">
+    </audio>
+    <audio autoplay id="lasersound" >
+      <source src="musique/lasersound.mp3"  type="audio/mpeg">
+    </audio>
+    <audio id="explosionsound">
+        <source src="musique/explosionsound.mp3" type="audio/mpeg">
+    </audio>
+    <link rel="stylesheet" href="space-invader_menu.css">
+  </head>
+  <body>
+    <header>
+      <button><img src="screen/arcade.jpg" onclick="onclickMenu()"></button>
+    </header>
+      <div class="canvas-wrapper">
+			  <canvas id="game-canvas"></canvas>
+        <br><label>START</label>
+		  </div>
+      
+      <footer>
+        <p>Cedric CHHUON</p>
+        <p>Azzedine LAHMAR</p>
+        <p>Nicolas HOVETTE</p>
+    </footer>
+    <script src="scripts/space-invader_menu.js"></script>
+  </body>
+</html>

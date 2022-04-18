@@ -8,19 +8,33 @@
     </head>
 
     <body>
+        <header>
+            <img src="screen/arcade.jpg" class="menu" onclick="onclickMenu()">
+        </header>
         <div class="carrousel">
             <div class="container_jeu" id="container_jeu">
-                <img class="item-0" id="item-0" src="screen/snake_cover.png" >
-                <img class="item-1" id="item-1" src="screen/space_invader_cover.png">
-                <img class="item-2" id="item-2" src="screen/arcade.jpg">
-                <img class="item-3" id="item-3" src="screen/arcade.jpg">
-                <img class="item-4" id="item-4" src="screen/arcade.jpg">
+                <img class="item-0" id="item-0" src="screen/snake_cover.png" onclick="onclickJeu()">
+                <img class="item-1" id="item-1" src="screen/space-invader_cover.png" onclick="onclickJeu()">
+                <img class="item-2" id="item-2" src="screen/arcade.jpg" onclick="onclickJeu()">
+                <img class="item-3" id="item-3" src="screen/arcade.jpg" onclick="onclickJeu()">
+                <img class="item-4" id="item-4" src="screen/arcade.jpg" onclick="onclickJeu()">
+                
+
             </div>
             <div class="navContainer">
                 <img src="screen\navButton.png" class="navButton" id="left" onclick="left()">
                 <img src="screen\navButton.png" class="navButton" id="right" onclick="right()">
             </div>
+            <div id="label">
+                <p>Choose your game</p>
+            </div>
+            
         </div>
+        <footer>
+            <p>Cedric CHHUON</p>
+            <p>Azzedine LAHMAR</p>
+            <p>Nicolas HOVETTE</p>
+        </footer>
         <script type="text/javascript" src="scripts\choix_jeu.js"></script>
     </body>
 

@@ -1,24 +1,33 @@
 <html>
 
-    <header>
+    <head>
     <script type="text/javascript" src="accueil.js"></script>  
     <link rel="stylesheet" href="accueil.css">
-    </header>
+    </head>
     <body>
-        
+        <header>
+            <button><img src="screen/arcade.jpg" onclick="onclickMenu()"></button>
+        </header>
         <div class="menu_principal" id="menu_principal" >
             <div class="menu_difficulte" id="menu_difficulte">
                  <label class="titre">ARCADE<br>GAME</label><br><br><br>
                  <a class="menu" href="choix_jeu.html">START</a><br>
-                 <a class="menu" href="">RULES</a>
+                 <a class="menu" href="apropos.html">A propos</a>
                  
             </div>
         </div>
 
+        <footer>
+            <p>Cedric CHHUON</p>
+            <p>Azzedine LAHMAR</p>
+            <p>Nicolas HOVETTE</p>
+        </footer>
+        <script>
+            function onclickMenu() {
+                location.replace(window.location.href = '../ESME_SnakeGame/accueil.html');
+            }
+        </script>
     </body>
-    <footer>
-        <p>Cedric CHHUON</p>
-        <p>Azzedine LAHMAR</p>
-        <p>Nicolas HOVETTE</p>
-    </footer>
+
+
 </html>

@@ -244,4 +244,8 @@ function onClickStart(){
 	}
 }
 
+function onclickMenu() {
+	location.replace(window.location.href = '../ESME_SnakeGame/accueil.html');
+}
+
 	
